@@ -1,0 +1,17 @@
+TF_LOG --> TRACE, DEBUG, INFO, WARN or ERROR
+
+export TF_LOG=TRACE
+
+export TF_LOG_PATH=C:/Users/"Maitri WInd"/Downloads/ThreeTierModularized/logs/trace.log 
+
+
+#############
+
+terraform fmt
+
+############
+
+terraform validate
+
+############
+
