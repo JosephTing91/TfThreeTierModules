@@ -1,1 +1,8 @@
 C:/Users/"Maitri WInd"/Downloads/TfThreeTierModules/Project-1/.terraform/
+
+
+#use git rm cache to get rid of the big file from the commit
+
+#git rm --Project-1/.terraform/providers/registry.terraform.io/hashicorp/aws/4.24.0/windows_amd64/terraform-provider-aws_v4.24.0_x5.exe
+
+#Project-1/.terraform/providers/registry.terraform.io/hashicorp/aws/4.24.0/windows_amd64/terraform-provider-aws_v4.24.0_x5.exe
