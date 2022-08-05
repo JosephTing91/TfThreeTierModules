@@ -1,5 +1,6 @@
 C:/Users/"Maitri WInd"/Downloads/TfThreeTierModules/Project-1/.terraform/
-
+terraform-provider-aws_v4.24.0_x5.exe
+*.log
 
 #use git rm cache to get rid of the big file from the commit
 
