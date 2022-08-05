@@ -21,16 +21,12 @@ variable "instance_type"{
 
 variable "key_name"{
 }
-
-variable "web_ami" {}
-variable "app_ami" {}
+variable "ami_list"{}
 
 variable "region"{
   type   = string
 }
-variable "ami_id_master" {}
 
-#linux 2 ami
 variable "ami_id_managed" {
   type = map(string)
 }

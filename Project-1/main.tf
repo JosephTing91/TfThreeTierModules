@@ -44,10 +44,8 @@ module "lb" {
 
 module "ec2" {
   source="../Modules/ec2"
-  ami_id_master=var.ami_id_master
+  ami_list=var.ami_list
   ami_id_managed=var.ami_id_managed
-  app_ami=var.app_ami
-  web_ami=var.web_ami
   instance_type=var.instance_type
   region=var.region
   key_name=var.key_name

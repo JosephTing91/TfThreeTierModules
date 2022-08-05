@@ -1,6 +1,6 @@
 
 resource "aws_instance" "bastion" {
-  ami             = var.ami_id_master #ubuntu ami
+  ami             = var.ami_list["ubuntu"] #ubuntu ami
   instance_type   = "t2.micro"
   vpc_security_group_ids = [var.bastionsg_id]
   key_name        = var.key_name
