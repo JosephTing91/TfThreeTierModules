@@ -26,7 +26,6 @@ resource "aws_subnet" "priv-subnet-1" {
     tags = { Name = var.vpc_name_tag[3]}
 }
 
-
 resource "aws_subnet" "priv-subnet-2" {
     vpc_id = aws_vpc.vpc.id
     cidr_block = var.cidr_blocks["priv_sn2"]
@@ -34,15 +33,12 @@ resource "aws_subnet" "priv-subnet-2" {
     tags = { Name = var.vpc_name_tag[4]}
 }
 
-
 resource "aws_subnet" "priv-subnet-3" {
     vpc_id = aws_vpc.vpc.id
     cidr_block = var.cidr_blocks["priv_sn3"]
     availability_zone = "us-east-1a"
     tags = { Name = var.vpc_name_tag[5]}
 }
-
-
 
 resource "aws_subnet" "priv-subnet-4" {
     vpc_id = aws_vpc.vpc.id

@@ -48,9 +48,7 @@ resource "aws_alb_target_group" "public-lb-tg" {
     port = 80
   }
 }
-output "public-lb-tg-arn" {
-    value = aws_alb_target_group.public-lb-tg.arn     
-}
+
 resource "aws_alb_target_group" "private-lb-tg" {
   name     = "private-lb-tg"
   port     = 4000
@@ -65,9 +63,7 @@ resource "aws_alb_target_group" "private-lb-tg" {
     port = 4000
   }
 }
-output "private-lb-tg-arn" {
-    value = aws_alb_target_group.private-lb-tg.arn     
-}
+
 
 resource "aws_alb_listener" "pub-listener_http" {
   load_balancer_arn = "${aws_alb.Web-facing-LB.arn}"
