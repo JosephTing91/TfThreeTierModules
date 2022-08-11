@@ -63,9 +63,16 @@ module "ec2" {
 
 
 
-provider "aws" {
-  region="us-east-1"
+resource "aws_instance" "test2" {
+  ami = "ami-090fa75af13c156b4"
+  instance_type = "t2.micro"
+  tags = {
+    Name="local-exec-ec2"
+  }
+  provider= aws.awstest19
+
+  provisioner "local-exec" {
+    command = "echo ${aws_instance.test2.public_ip} >> publicip.txt"
+
+  }
 }
-
-
-

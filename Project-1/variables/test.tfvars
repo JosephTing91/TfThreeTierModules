@@ -17,6 +17,7 @@ ami_id_managed= {
     "us-west-2" = "ami-098e42ae54c764c35"
     "ca_central"= "ami-00f881f027a6d74a0"
 }
+
 cidr_blocks= {
     "vpc" = "10.0.0.0/16"
     "pub_sn1"= "10.0.10.0/24"
@@ -26,6 +27,8 @@ cidr_blocks= {
     "priv_sn3" = "10.0.50.0/24"
     "priv_sn4" = "10.0.60.0/24"
 }
+
+
 
 instance_type="t2.micro"
 
